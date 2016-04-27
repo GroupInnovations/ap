@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>IIITMK Alumini Portal</title>
+	
+	<link rel="shortcut icon" type="image/png" data-th-href="@{/images/siteicon.png}"/>
+	
+	<!-- Vendor styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" data-th-href="@{/public/vendors/bootstrap336/css/bootstrap.min.css}" />
+	<link rel="stylesheet" href="../public/vendors/font-awesome/css/font-awesome.min.css" data-th-href="@{/public/vendors/font-awesome/css/font-awesome.min.css}" />
+	<link rel="stylesheet" href="../public/vendors/pace/pace.css" data-th-href="@{/public/vendors/pace/pace.css}" />
+	
+	<!-- Application styles -->
+	<link rel="stylesheet" href="../resources/css/common.css" data-th-href="@{/public/css/common.css}" />
+	<link rel="stylesheet" href="../resources/css/bootstrap.overrides.css" data-th-href="@{/public/css/bootstrap.overrides.css}" />
+	<link rel="stylesheet" href="../resources/css/bootstrap.extenssions.css" data-th-href="@{/public/css/bootstrap.extenssions.css}" />
+	<link rel="stylesheet" href="../resources/css/public/home.css" data-th-href="@{/public/css/fragments/public-header.css}" />
+	
+	<!-- Page specific styles -->
+
+</head>
+<body>
+	<!-- Puts header in this div -->
+	<div data-th-replace="@{fragments/public-header} :: public-header"></div>
+	
+	<!-- Container for the content of home page -->
+	<div class="container-fluid">
+		
+	</div>
+	
+	<!-- Puts footer in this div -->
+	<div data-th-replace="@{fragments/public-footer} :: public-footer"></div>
+	
+	<!-- Vendor scripts -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" data-th-src="@{/public/vendors/jquery222/jquery.min.js}"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" data-th-src="@{/public/vendors/bootstrap336/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" data-th-src="@{/public/vendors/pace/pace.min.js}"></script>
+	
+	<!-- Custom scripts -->
+
+</body>
+</html>

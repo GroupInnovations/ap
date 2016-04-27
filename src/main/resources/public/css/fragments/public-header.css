@@ -1,0 +1,76 @@
+nav.navbar-findcond {
+	background: #1477A1;
+	border-color: #ccc;
+	box-shadow: 0 0 2px 0 #ccc;
+}
+
+nav.navbar-findcond a {
+	color: white;
+}
+
+nav.navbar-findcond ul.navbar-nav a {
+	color: #eeeeec;
+	border-style: solid;
+	border-width: 0 0 2px 0;
+	border-color: #1477A1;
+}
+
+nav.navbar-findcond ul.navbar-nav a:hover, nav.navbar-findcond ul.navbar-nav a:visited,
+	nav.navbar-findcond ul.navbar-nav a:focus, nav.navbar-findcond ul.navbar-nav a:active {
+	background: #1376a1;
+}
+
+nav.navbar-findcond ul.navbar-nav a:hover {
+	border-color: #eeeeec;
+}
+
+nav.navbar-findcond li.divider {
+	background: #ccc;
+}
+
+nav.navbar-findcond button.navbar-toggle {
+	background: #edd400;
+	border-radius: 2px;
+}
+
+nav.navbar-findcond button.navbar-toggle:hover {
+	background: #999;
+}
+
+nav.navbar-findcond button.navbar-toggle>span.icon-bar {
+	background: black;
+}
+
+nav.navbar-findcond ul.dropdown-menu {
+	border: 0;
+	background: #fff;
+	border-radius: 4px;
+	margin: 4px 0;
+	box-shadow: 0 0 4px 0 #ccc;
+}
+
+nav.navbar-findcond ul.dropdown-menu>li>a {
+	color: #444;
+	border-bottom-color: white;
+}
+
+nav.navbar-findcond ul.dropdown-menu>li>a:hover {
+	background: #1477A1;
+	color: #fff;
+}
+
+nav.navbar-findcond span.badge {
+	background: #f14444;
+	font-weight: normal;
+	font-size: 11px;
+	margin: 0 4px;
+}
+
+nav.navbar-findcond span.badge.new {
+	background: rgba(255, 0, 0, 0.8);
+	color: #fff;
+}
+
+nav.navbar-findcond a[class="navbar-brand"] {
+	font-size: 24px;
+}

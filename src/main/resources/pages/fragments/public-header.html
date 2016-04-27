@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Public Header</title>
+</head>
+<body>
+	<header data-th-fragment="public-header">
+		<nav class="navbar navbar-findcond navbar-fixed-top">
+		    <div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">alumini<strong>portal</strong></a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#" data-th-href="@{/alumini/home}">Home</a></li>
+						<li><a href="#">Blogs</a></li>
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+</body>
+</html>

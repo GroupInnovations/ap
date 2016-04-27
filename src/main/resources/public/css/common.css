@@ -1,0 +1,18 @@
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	color: inherit;
+	margin-bottom: 110px;
+}
+
+.site-footer {
+	border-top: 1px solid #E6E6E6;
+	position: absolute;
+	bottom: 0;
+	padding-top: 20px;
+	width: 100%;
+	height: 90px;
+}
