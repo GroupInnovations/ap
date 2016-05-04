@@ -1,27 +1,29 @@
 nav.navbar-findcond {
-	background: #1477A1;
-	border-color: #ccc;
-	box-shadow: 0 0 2px 0 #ccc;
+	background: #eeeeec;
+	padding-top: 15px;
+	box-shadow: 0px 1px 5px #555753;
 }
 
 nav.navbar-findcond a {
-	color: white;
+	color: #000000;
 }
 
 nav.navbar-findcond ul.navbar-nav a {
-	color: #eeeeec;
+	color: #2e3436;
+	font-size: 16px;
 	border-style: solid;
 	border-width: 0 0 2px 0;
-	border-color: #1477A1;
+	border-color: #eeeeec;
 }
 
 nav.navbar-findcond ul.navbar-nav a:hover, nav.navbar-findcond ul.navbar-nav a:visited,
 	nav.navbar-findcond ul.navbar-nav a:focus, nav.navbar-findcond ul.navbar-nav a:active {
-	background: #1376a1;
+	background: #eeeeec;
 }
 
 nav.navbar-findcond ul.navbar-nav a:hover {
-	border-color: #eeeeec;
+	border-color: #46B0EF;
+	color: black;
 }
 
 nav.navbar-findcond li.divider {
@@ -72,5 +74,5 @@ nav.navbar-findcond span.badge.new {
 }
 
 nav.navbar-findcond a[class="navbar-brand"] {
-	font-size: 24px;
+	font-size: 27px;
 }

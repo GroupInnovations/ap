@@ -1,0 +1,22 @@
+#large-header {
+	height: 425px;
+	background-color: #4B6CA9;
+	padding: 130px 0px 60px 0px;
+	border-bottom: 3px solid #323233;
+}
+
+#large-header p {
+	font-size: 22px;
+	padding-top: 20px;
+	color: white;
+	line-height: 23px;
+}
+
+#container-association-news {
+	padding-top: 25px;
+}
+
+#container-association-news .row {
+	padding-top: 10px;
+	padding-bottom: 12px;
+}

@@ -24,7 +24,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
 			"/public/**",
 			
 			// Specific URLS that are guarded by controller
-			"/", "/home", "/register", "/about-us", "/news", "/disclaimer", "/privacy-policy",
+			"/", "/home", "/register", "/about-us", "/news/**", "/disclaimer", "/privacy-policy",
 			
 			// Specific URLS that are part of public APIs
 			"/api/public/**",

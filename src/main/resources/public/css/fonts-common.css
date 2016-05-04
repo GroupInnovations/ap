@@ -1,0 +1,67 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: RobotoItalic;
+	src: url(../fonts/Roboto-Italic.ttf);	
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(../fonts/Roboto-Bold.ttf);	
+}
+
+@font-face {
+	font-family: RobotoBoldItalic;
+	src: url(../fonts/Roboto-BoldItalic.ttf);	
+}
+
+@font-face {
+	font-family: RobotoMedium;
+	src: url(../fonts/Roboto-Medium.ttf);	
+}
+
+@font-face {
+	font-family: RobotoMediumItalic;
+	src: url(../fonts/Roboto-MediumItalic.ttf);	
+}
+
+@font-face {
+	font-family: RobotoLight;
+	src: url(../fonts/Roboto-Light.ttf);	
+}
+
+@font-face {
+	font-family: RobotoLightItalic;
+	src: url(../fonts/Roboto-LightItalic.ttf);	
+}
+
+body { font-family: 'RobotoRegular', sans-serif; }
+
+h1, h2, b, strong { font-family: 'RobotoBold', sans-serif; }
+
+h1 > em, h1 > i,
+h2 > em, h2 > i,
+b > em, b > i,
+strong > em, strong > i {
+	font-family: 'RobotoBoldItalic', sans-serif;
+}
+
+h3, h4, h5 { font-family: 'RobotoMedium', sans-serif; }
+
+h3 > i, h3 > em,
+h4 > i, h4 > em,
+h5 > i, h5 > em { 
+	font-family: 'RobotoMediumItalic', sans-serif; 
+}
+
+.text-muted {
+	font-family: 'RobotoLight', sans-serif;
+}
+
+i[class='text-muted'], em[class='text-muted'] {
+	font-family: 'RobotoLightItalic', sans-serif;
+}
+
