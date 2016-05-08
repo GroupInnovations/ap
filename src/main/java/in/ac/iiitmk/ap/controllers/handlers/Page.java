@@ -16,6 +16,7 @@ public enum Page {
 	
 	// Public page links defined here
 	PAGE_PUBLIC_HOME ("home", Page.PUBLIC_DIR),
+	PAGE_PUBLIC_REGISTER ("register", Page.PUBLIC_DIR),
 	
 	// Alumini page links defined here
 	PAGE_ALUMINI_HOME ("home", Page.ALUMINI_DIR);

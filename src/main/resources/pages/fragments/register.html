@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Register Form</title>
+</head>
+<body>
+	<div data-th-fragment="register">
+		<div data-th-if="${registrationFailed != null}" class="alert alert-danger">
+			<a href="#" class="close" data-dismiss="alert">&times;</a>
+			<p data-th-text="${registrationFailed}"></p>
+		</div>
+		<div data-th-if="${registrationSuccess != null}" class="alert alert-success">
+			<a href="#" class="close" data-dismiss="alert">&times;</a>
+			<p data-th-text="${registrationSuccess}"></p>
+		</div>
+		<form action="#" data-th-action="@{/register}" data-th-object="${registrationFormModel}" method="POST" id="registeration-form" data-toggle="validator">
+			<!-- Full Name -->
+			<div class="form-group">
+				<label for="fullName" class="label-control">Full Name</label>
+				<input type="text" name="fullName" class="form-control" data-th-required="required" data-th-field="*{fullName}" />
+				<span class="help-block">Same as that on the degree certificate.</span>
+			</div>
+			
+			<!-- Email Id -->
+			<div class="form-group">
+				<label for="email" class="label-control">Email <i class="fa fa-spinner fa-spin fa- fa-fw margin-bottom" id="register-email-ajax-loader"></i></label>
+				<span class="text-danger" id="register-error-message-email"></span>
+				<input type="email" name="email" class="form-control" data-th-required="required" data-th-field="*{email}" id="register-email" />
+				<span class="help-block">We will send you a confirmation mail on this id.</span>
+			</div>
+			
+			<!-- College Email Id -->
+			<div class="form-group">
+				<label for="studentEmail" class="label-control">Student Email <i class="fa fa-spinner fa-spin fa- fa-fw margin-bottom" id="register-student-email-ajax-loader"></i></label>
+				<span class="text-danger" id="register-error-message-student-email"></span>
+				<div class="input-group">
+					<input type="text" class="form-control" data-th-required="required" name="studentEmail" data-th-field="*{studentEmail}" id="register-student-email" />
+					<div class="input-group-addon"><strong>@iiitmk.ac.in</strong></div>
+				</div>
+				<span class="help-block">What you fill in would be used for login.</span>
+			</div>
+			
+			<!-- University registration number -->
+			<div class="form-group">
+				<label for="registrationNumber" class="label-control">University Registration Number <i class="fa fa-spinner fa-spin fa- fa-fw margin-bottom" id="register-registration-number-ajax-loader"></i></label>
+				<span class="text-danger" id="register-error-message-registration-number"></span>
+				<input type="text" name="registrationNumber" class="form-control" data-th-required="required" data-th-field="*{registrationNumber}" id="register-registration-number" />
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<!-- Year of Admission -->
+					<div class="form-group">
+						<label for="yearOfAdmission" class="label-control">Year of admission</label>
+						<input type="number" name="yearOfAdmission" class="form-control" data-th-required="required" data-th-field="*{yearOfAdmission}" />
+					</div>
+				</div>
+				<!-- Course Selected -->
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label for="courseSelected" class="label-control">Course Selected</label>
+						<input type="text" name="courseSelected" class="form-control" data-th-required="required" data-th-field="*{courseSelected}" />
+					</div>
+				</div>
+			</div>
+			
+			<!-- Password -->
+			<div class="form-group">
+				<label for="password" class="label-control">Password</label>
+				<input type="password" class="form-control" data-th-required="required" data-minlength="8" name="password" id="register-password" />
+				<span class="help-block">Standard rules apply - minimum 8 chars, combination of alphabets, special characters and numbers. Need help, <a href="https://identitysafe.norton.com/password-generator/" target="_blank">use this</a> <span class="glyphicon glyphicon-new-window"></span>.</span>
+			</div>
+
+			<!-- Repeated password -->
+			<div class="form-group">
+				<label for="repeatedPassword" class="label-control">Repeat Password</label>
+				<input type="password" class="form-control" data-th-required="required" name="repeatedPassword" data-match="#register-password" data-match-error="Passwords do not match" />
+				<div class="help-block with-errors"></div>
+			</div>
+			
+			<ul class="list-inline text-center">
+				<li><button type="submit" class="btn btn-primary" id="register-submit">Create my new account</button></li>
+			</ul>
+		</form>
+		
+		<ul class="list-inline text-center">
+			<li><a href="#">Already have an account</a></li>
+			<li><a href="#">Forgot my password</a></li>
+		</ul>
+	</div>
+</body>
+</html>
